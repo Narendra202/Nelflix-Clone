@@ -11,11 +11,12 @@
     <!-- Welcome User | Profile Img | SignOut -->
     <div class="text-white flex items-center gap-4">
         <div class="flex items-center gap-2">
-            <a href="/"><span>Welcome <strong>Sashi</strong></span></a>
+            <a href="/"><span>Welcome <strong>{{userName}}</strong></span></a>
         <img class="rounded-full" [src]="userImg" width="42" alt="user-img">
         </div>
         &nbsp; | &nbsp;
-        <a href="/">Signout</a>
+        <a href="/browse">Signout</a>
+        <!-- <button (click)="SignOutUser()" routerLink="/">Sign Out</button> -->
     </div>
 
 </header>
